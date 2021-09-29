@@ -22,10 +22,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
-Route::get('/quienessomos', [App\Http\Controllers\LandingController::class, 'quienessomos']);
-Route::get('/servicios', [App\Http\Controllers\LandingController::class, 'servicios']);
-Route::get('/agendarcita', [App\Http\Controllers\LandingController::class, 'agendarcita']);
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/Propietarios', [App\Http\Controllers\PropietariosController::class, 'index']);
 Route::get('/Propietarios/crear', [App\Http\Controllers\PropietariosController::class, 'create']);
 Route::get('/Propietarios/listar', [App\Http\Controllers\PropietariosController::class, 'listar']);
@@ -33,3 +29,18 @@ Route::post('/Propietarios/guardar', [App\Http\Controllers\PropietariosControlle
 Route::get('/Propietarios/editar/{id}', [App\Http\Controllers\PropietariosController::class, 'edit']);
 Route::post('/Propietarios/actualizar', [App\Http\Controllers\PropietariosController::class, 'update']);
 Route::get('/Propietarios/cambiar/estado/{id}/{estado}', [App\Http\Controllers\PropietariosController::class, 'updateState']);
+
+
+Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
+Route::get('/Inmuebles', [App\Http\Controllers\InmueblesController::class, 'index']);
+Route::get('/Inmuebles/crear', [App\Http\Controllers\InmueblesController::class, 'create']);
+Route::get('/Inmuebles/listar', [App\Http\Controllers\InmueblesController::class, 'listar']);
+Route::post('/Inmuebles/guardar', [App\Http\Controllers\InmueblesController::class, 'save']);
+Route::get('/Inmuebles/editar/{id}', [App\Http\Controllers\InmueblesController::class, 'edit']);
+Route::post('/Inmuebles/actualizar', [App\Http\Controllers\InmueblesController::class, 'update']);
+Route::get('/Inmuebles/cambiar/estado/{id}/{estado}', [App\Http\Controllers\InmueblesController::class, 'updateState']);
+
+
+Route::get('/PropInmuebles', [App\Http\Controllers\PropInmueblesController::class, 'index']);
+Route::post('/PropInmuebles/guardar2', [App\Http\Controllers\PropInmueblesController::class, 'save']);
+Route::get('/PropInmuebles/listar2', [App\Http\Controllers\PropInmueblesController::class, 'show']);

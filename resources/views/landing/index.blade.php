@@ -3,17 +3,9 @@
 
 <header class="masthead">
             <div class="container">
-                <ul class="botones text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="btn btn-primary btn-xl text-uppercase" href="#">Arrendar</a></li>
-                    <li class="nav-item"><a class="btn btn-primary btn-xl text-uppercase" href="#">Comprar</a></li>
-                </ul>
-                <div class="card-header row">
-                    <ul class="botones text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="btn btn-primary btn-xl text-uppercase" href="#">Tipo de inmueble</a></li>
-                        <li class="nav-item"><a class="btn btn-primary btn-xl text-uppercase" href="#">Zonas</a></li>
-                        <li class="nav-item"><a class="btn btn-primary btn-xl text-uppercase" href="#">Precios</a></li>
-                    </ul>
-                </div>
+                <div class="masthead-subheading">Welcome To Our Studio!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
         <!-- Services-->
