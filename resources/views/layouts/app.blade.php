@@ -77,7 +77,7 @@
           </svg>
         </button>
         <ul class="c-header-nav d-md-down-none">
-          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="/landing/index">Inicio</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="/">Inicio</a></li>
         </ul>
         <ul class="c-header-nav ml-auto mr-4">
           <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
@@ -93,14 +93,13 @@
                 <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-envelope-open') }}"></use>
               </svg></a></li>
           <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <div class="c-avatar"><img class="c-avatar-img" src="{{ asset('assets/dashboard/assets/img/avatars/6.jpg') }}" alt="admin@email.com"></div>
-            </a>
+            <a href="{{ url('/logout') }}"> logout </a>
           </li>
         </ul>
         <div class="c-subheader px-3">
           <!-- Breadcrumb-->
           <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item"><a href="../landing/index">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
             <li class="breadcrumb-item"><a href="#">Admin</a></li>
             <li class="breadcrumb-item active">Dashboard</li>
             <!-- Breadcrumb Menu-->
