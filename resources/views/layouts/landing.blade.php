@@ -20,7 +20,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="{{ asset('assets/landing/assets/img/logocristal.jpg')}}" width="110" height="100" class="rounded" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img src="{{ asset('assets/landing/assets/img/logocristal.jpg')}}" width="110" height="120" class="rounded" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menú
                     <i class="fas fa-bars ms-1"></i>
