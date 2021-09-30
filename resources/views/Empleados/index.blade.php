@@ -2,7 +2,7 @@
 @section("body")
 <div class="card">
     <div class="card-header">
-        <strong>Propietarios</strong>
+        <strong>Empleados</strong>
         <a href="/Empleados/crear" class="btn btn-link">Crear</a>
     </div>
     <div class="card-body">
