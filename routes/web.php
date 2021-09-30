@@ -21,6 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/Roles', [App\Http\Controllers\RolesController::class, 'index']);
+Route::get('/Roles/crear', [App\Http\Controllers\RolesController::class, 'create']);
+
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/quienessomos', [App\Http\Controllers\LandingController::class, 'quienessomos']);
 Route::get('/servicios', [App\Http\Controllers\LandingController::class, 'servicios']);
@@ -33,6 +36,16 @@ Route::get('/Propietarios/editar/{id}', [App\Http\Controllers\PropietariosContro
 Route::post('/Propietarios/actualizar', [App\Http\Controllers\PropietariosController::class, 'update']);
 Route::get('/Propietarios/cambiar/estado/{id}/{estado}', [App\Http\Controllers\PropietariosController::class, 'updateState']);
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
+Route::get('/Usuarios', [App\Http\Controllers\UsuariosController::class, 'index']);
+Route::get('/Usuarios/crear', [App\Http\Controllers\UsuariosController::class, 'create']);
+Route::get('/Usuarios/listar', [App\Http\Controllers\UsuariosController::class, 'listar']);
+Route::post('/Usuarios/guardar', [App\Http\Controllers\UsuariosController::class, 'save']);
+Route::get('/Usuarios/editar/{id}', [App\Http\Controllers\UsuariosController::class, 'edit']);
+Route::post('/Usuarios/actualizar', [App\Http\Controllers\UsuariosController::class, 'update']);
+Route::get('/Usuarios/cambiar/estado/{id}/{estado}', [App\Http\Controllers\UsuariosController::class, 'updateState']);
 
 
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
@@ -69,3 +82,8 @@ Route::post('/Citas/download', [App\Http\Controllers\CitasController::class, 'do
 Route::get('/Inmuebles/Servicios', [App\Http\Controllers\InmueblesServiciosController::class, 'index']);
 Route::post('/Inmuebles/guardar2', [App\Http\Controllers\InmueblesServiciosController::class, 'save']);
 Route::get('/Inmuebles/listar2', [App\Http\Controllers\InmueblesServiciosController::class, 'show']);
+
+Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
+Route::get('/Reportes', [App\Http\Controllers\ReportesController::class, 'index']);
+Route::get('/Reportes/listar1', [App\Http\Controllers\ReportesController::class, 'listar1']);
+Route::get('/Reportes/listar2', [App\Http\Controllers\ReportesController::class, 'listar2']);
