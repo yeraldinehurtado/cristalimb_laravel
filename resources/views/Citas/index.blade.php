@@ -30,7 +30,7 @@
     $('#Citas').DataTable({
         processing: true,
         serverSide: true,
-        ajax: '/Propietarios/listar',
+        ajax: '/Citas/listar',
         columns: [
             {data: 'identificacion', name: 'identificacion'},
             {data: 'nombres', name: 'nombres'},
