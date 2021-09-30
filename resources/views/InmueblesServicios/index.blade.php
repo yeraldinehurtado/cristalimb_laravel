@@ -106,7 +106,7 @@ function agregar_servicio() {
                 ${servicio_text}    
             </td>
             <td>
-                <button type="button" class="btn btn-danger" onclick="eliminar_servicio(${servicio_id},  
+                <button type="button" class="btn btn-danger" onclick="eliminar_servicio(${servicio_id})">X</button>  
             </td>
         </tr>
     `);
