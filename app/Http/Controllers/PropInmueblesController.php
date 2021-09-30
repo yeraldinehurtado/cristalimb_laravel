@@ -38,14 +38,23 @@ class PropInmueblesController extends Controller
                 "zona"=>$input["zona"],
                 "estado"=>1,
             ]);
-            foreach($input["inmueble_id"] as $key => $value){
+            $propietarios = Propietarios::Create([
+                "identificacion"=>$input["identificacion"],
+                "nombres"=>$input["nombres"],
+                "apellidos"=>$input["apellidos"],
+                "telefono"=>$input["telefono"],
+                "email"=>$input["email"],
+                "direccion"=>$input["direccion"],
+                "estado"=>1,
+            ]);
+            
             PropInmuebles::create([
-                "inmueble_id"=>$value,
+                "inmueble_id"=>$inmuebles->id,
                 "propietario_id"=>$propietarios->id,
                 "tipo" => $inmuebles->tipo,
                 "valor" => $inmuebles->valor
             ]);
-            }
+            
             $ins = Propietarios::find($id);
             
             DB::commit();
@@ -65,19 +74,18 @@ class PropInmueblesController extends Controller
         $propietarios = Propietarios::all();
         $inmuebles = Inmuebles::all();
 
-        $id = $request->input("id");
-        $inmuebles=[];
-        if ($id != null){
+        return DataTables::of($propietarios);
+
             $inmuebles = Inmuebles::select("inmuebles.*")
             ->join("propietarios_inmuebles", "inmuebles.id","=", "propietarios_inmuebles.inmueble_id")
             ->where("propietarios_inmuebles.inmueble_id", $id)
             ->get();
 
-            $propietarios = Inmuebles::select("propietarios.*")
+            $propietarios = Propietarios::select("propietarios.*")
             ->join("propietarios_inmuebles", "propietarios.id","=", "propietarios_inmuebles.propietario_id")
             ->where("propietarios_inmuebles.propietario_id", $id)
             ->get();
-        }
+        
 
         return view("PropInmuebles.show", compact("inmuebles", "propietarios"));
 

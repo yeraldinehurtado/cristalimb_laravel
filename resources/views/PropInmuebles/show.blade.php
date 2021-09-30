@@ -40,40 +40,4 @@
     </div>
 </div>
 
-@if(count($inmuebles) > 0)
-<div class="row">
-    <div class="col">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th colspan="4" class="text-center">Inmuebles</th>
-                </tr>
-                <tr>
-                    <th>Código</th>
-                    <th>Descripción</th>
-                    <th>Tipo</th>
-                    <th>Servicio</th>
-                    <th>Valor</th>
-                    <th>Área</th>
-                    <th>Zona</th>
-                    <th>Opciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($inmuebles as $value)
-                <tr>
-                    <td>{{$value->codigo}}</td>
-                    <td>{{$value->descripcion}}</td>
-                    <td>{{$value->tipo}}</td>
-                    <td>{{$value->servicio}}</td>
-                    <td>{{$value->valor}}</td>
-                    <td>{{$value->area}}</td>
-                    <td>{{$value->zona}}</td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
-</div>
-@endif
 @endsection

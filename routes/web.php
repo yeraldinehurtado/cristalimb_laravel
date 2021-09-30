@@ -42,5 +42,5 @@ Route::get('/Inmuebles/cambiar/estado/{id}/{estado}', [App\Http\Controllers\Inmu
 
 
 Route::get('/PropInmuebles', [App\Http\Controllers\PropInmueblesController::class, 'index']);
-Route::post('/PropInmuebles/guardar2', [App\Http\Controllers\PropInmueblesController::class, 'save']);
+Route::post('/PropInmuebles/guardar', [App\Http\Controllers\PropInmueblesController::class, 'save']);
 Route::get('/PropInmuebles/listar2', [App\Http\Controllers\PropInmueblesController::class, 'show']);

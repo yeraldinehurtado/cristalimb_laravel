@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-4">
             <div class="card">
-            <div class="card-head">
+                <div class="card-head">
                     <h4 class="text-center">2. Info propietarios</h4>
                 </div>
                 <div class="row card-body">
@@ -48,37 +48,37 @@
         </div>
         <div class="col-4">
             <div class="card">
-            <div class="card-head">
+                <div class="card-head">
                     <h4 class="text-center">1. Info inmueble</h4>
                 </div>
                 <div class="row card-body">
                     <div class="form-group col-6">
                         <label for="">Código</label>
-                        <input type="text" class="form-control" name="codigo">
+                        <input type="text" class="form-control" id="codigo" name="codigo">
                     </div>
                     <div class="form-group col-6">
                         <label for="">Descripción</label>
-                        <input type="text" class="form-control" name="descripcion">
+                        <input type="text" class="form-control" id="descripcion" name="descripcion">
                     </div>
                     <div class="form-group col-6">
                         <label for="">Tipo</label>
-                        <input type="text" class="form-control" name="tipo">
+                        <input type="text" class="form-control" id="tipo" name="tipo">
                     </div>
                     <div class="form-group col-6">
                         <label for="">Servicio</label>
-                        <input type="text" class="form-control" name="servicio">
+                        <input type="text" class="form-control" id="servicio" name="servicio">
                     </div>
                     <div class="form-group col-6">
                         <label for="">Valor</label>
-                        <input type="text" class="form-control" name="valor">
+                        <input type="text" class="form-control" id="valor" name="valor">
                     </div>
                     <div class="form-group col-6">
                         <label for="">Área</label>
-                        <input type="text" class="form-control" name="area">
+                        <input type="text" class="form-control" id="area" name="area">
                     </div>
                     <div class="form-group col-6">
                         <label for="">Zona</label>
-                        <input type="text" class="form-control" name="zona">
+                        <input type="text" class="form-control" id="zona" name="zona">
                     </div>
                 </div>
                 <div class="col-6">
@@ -96,16 +96,14 @@
                         <th>Valor</th>
                         <th>Área</th>
                         <th>Zona</th>
-                        <th>Opciones</th>
                     </tr>
                 </thead>
-                <tbody id="tblInmuebles">
+                <tbody id="tblImuebles">
 
                 </tbody>
             </table>
         </div>
     </div>
-
     </div>
 </form>
 @endsection
@@ -114,21 +112,18 @@
 @section("scripts")
 <script>
 function agregar_inmueble() {
-    let inmueble_id = $("#inmuebles option:selected").val();
     let codigo = $("#codigo").val();
     let descripcion = $("#descripcion").val();
-    let tipo = $("#tipo").text();
+    let tipo = $("#tipo").val();
     let servicio = $("#servicio").val();
     let valor = $("#valor").val();
     let area = $("#area").val();
     let zona = $("#zona").val();
 
+    if (codigo != null) {
 
-    $("#tblInmuebles").append(`
+        $("#tblInmuebles").append(`
                     <tr id="tr-${inmueble_id}">
-                        <td>
-                            <input type="hidden" name="inmueble_id[]" value="${inmueble_id}" />    
-                        </td>
                         <td>${codigo}</td>
                         <td>${descripcion}</td>
                         <td>${tipo}</td>
@@ -137,18 +132,17 @@ function agregar_inmueble() {
                         <td>${area}</td>
                         <td>${zona}</td>
                         <td>
-                            <button type="button" class="btn btn-danger" onclick="eliminar_inmueble(${inmueble_id},     
+                            <button type="button" class="btn btn-danger" onclick="eliminar_inmueble(${inmueble_id},    
                         </td>
                     </tr>
                 `);
-
-
+    } else {
+        alert("debe ingresar un codigo valido");
+    }
 }
-
 
 function eliminar_inmueble(inmueble_id) {
-    $("#tr-" + inmueble_id).remove();
-}
+        $("#tr-" + inmueble_id).remove();
+    }
 </script>
 @endsection
-
