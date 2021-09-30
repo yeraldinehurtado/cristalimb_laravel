@@ -37,10 +37,10 @@ class InmueblesServiciosController extends Controller
             ]);
 
             foreach($input["servicio_id"] as $key => $value){
-                ProductoInsumo::create([
+                InmueblesServicios::create([
                     "inmueble_id"=>$inmuebles->id,
                     "servicio_id"=>$value,
-                    "nombreServicio" => $input["nombreServicio"]
+                    "nombreServicio" => $input["nombreServicio"],
                 ]);
 
                 $ins = Servicio::find($value);
@@ -59,7 +59,7 @@ class InmueblesServiciosController extends Controller
         $id = $request->input("id");
         $servicios=[];
         if ($id != null){
-            $servicios = Insumo::select("servicios.*")
+            $servicios = Servicios::select("servicios.*")
             ->join("inmuebles_servicios", "servicios.id","=", "inmuebles_servicios.servicio_id")
             ->where("inmuebles_servicios.servicio_id", $id)
             ->get();

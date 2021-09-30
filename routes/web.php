@@ -55,5 +55,5 @@ Route::post('/Citas/actualizar', [App\Http\Controllers\CitasController::class, '
 
 
 Route::get('/Inmuebles/Servicios', [App\Http\Controllers\InmueblesServiciosController::class, 'index']);
-Route::get('/Inmuebles/guardar2', [App\Http\Controllers\InmueblesServiciosController::class, 'save']);
+Route::post('/Inmuebles/guardar2', [App\Http\Controllers\InmueblesServiciosController::class, 'save']);
 Route::get('/Inmuebles/listar2', [App\Http\Controllers\InmueblesServiciosController::class, 'show']);
