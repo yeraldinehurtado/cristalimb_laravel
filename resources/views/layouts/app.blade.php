@@ -62,6 +62,10 @@
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
             </svg> Inmuebles</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Empleados">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
+            </svg> Empleados</a></li>   
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Citas">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>

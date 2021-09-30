@@ -46,6 +46,15 @@ Route::get('/Inmuebles/cambiar/estado/{id}/{estado}', [App\Http\Controllers\Inmu
 
 
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
+Route::get('/Empleados', [App\Http\Controllers\EmpleadosController::class, 'index']);
+Route::get('/Empleados/crear', [App\Http\Controllers\EmpleadosController::class, 'create']);
+Route::get('/Empleados/listar', [App\Http\Controllers\EmpleadosController::class, 'listar']);
+Route::post('/Empleados/guardar', [App\Http\Controllers\EmpleadosController::class, 'save']);
+Route::get('/Empleados/editar/{id}', [App\Http\Controllers\EmpleadosController::class, 'edit']);
+Route::post('/Empleados/actualizar', [App\Http\Controllers\EmpleadosController::class, 'update']);
+
+
+Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/Citas', [App\Http\Controllers\CitasController::class, 'index']);
 Route::get('/Citas/crear', [App\Http\Controllers\CitasController::class, 'create']);
 Route::get('/Citas/listar', [App\Http\Controllers\CitasController::class, 'listar']);
