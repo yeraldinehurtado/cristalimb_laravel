@@ -27,10 +27,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Quiénes somos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Agendar una cita</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/quienessomos">Quiénes somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/agendarcita">Agendar una cita</a></li>
                         <li class="nav-item"><a class="nav-link" href="/login">Iniciar sesión</a></li>
                         <li class="nav-item"><a class="nav-link" href="/register">Registrarse</a></li>
                     </ul>

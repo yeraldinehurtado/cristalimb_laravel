@@ -22,6 +22,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
+Route::get('/quienessomos', [App\Http\Controllers\LandingController::class, 'quienessomos']);
+Route::get('/servicios', [App\Http\Controllers\LandingController::class, 'servicios']);
+Route::get('/agendarcita', [App\Http\Controllers\LandingController::class, 'agendarcita']);
 Route::get('/Propietarios', [App\Http\Controllers\PropietariosController::class, 'index']);
 Route::get('/Propietarios/crear', [App\Http\Controllers\PropietariosController::class, 'create']);
 Route::get('/Propietarios/listar', [App\Http\Controllers\PropietariosController::class, 'listar']);
