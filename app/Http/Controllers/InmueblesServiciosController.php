@@ -40,7 +40,7 @@ class InmueblesServiciosController extends Controller
                 InmueblesServicios::create([
                     "inmueble_id"=>$inmuebles->id,
                     "servicio_id"=>$value,
-                    "nombreServicio" => $input["nombreServicio"]
+                    "nombreServicio" => $input["nombreServicio"],
                 ]);
 
                 $ins = Servicio::find($value);
