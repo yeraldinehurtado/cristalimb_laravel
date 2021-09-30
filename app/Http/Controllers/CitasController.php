@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 //Referencia a libreria para envio de mensajes
 use Flash;
+use PDF;
 //Referencia al modelo de citas
 use App\Models\Citas;
 use DataTables;
@@ -121,4 +122,23 @@ class CitasController extends Controller
 
         }
     }
+    // creaos los metodos de la clase para cargar los parametros del informe 
+    public function informe(){
+        return view('Citas.informe');       
+    }
+    public function download(Request $request)
+    {
+        $input=$request->all();
+        $citas=Citas::select("*")
+        ->whereBetween('created_at', [$input["txtFechaInicial"],$input["txtFechaFinal"]])
+        ->get();
+
+        if (count ($citas) >0 ){
+            $pdf=PDF::loadView('pdf.cita', compact("citas","input"));
+            return $pdf->stream('archivo.pdf');
+        }else{
+            return redirect("Citas/index");
+        }
+    }
 }
+

@@ -42,7 +42,7 @@
     </style> 
 </head>
 <body>
-    <p>De: {$input[txtFechaInicial]}} hasta {$input[txtFechaFinal]}}</p>
+    <p>De: {{$input[txtFechaInicial]}} hasta {{$input[txtFechaFinal]}}</p>
     <div class="row">
         <div class="col">
             <table class="table">
@@ -56,9 +56,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach
+                    @foreach($cita as $value)
                     <tr>
+                        <td>{{$value->id}}</td>
+                        <td>{{$value->Nombres}}</td>
+                        <td>{{$value->telefono}}</td>
+                        <td>{{$value->Email}}</td>
+                        <td>{{$value->tipoServicio}}</td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

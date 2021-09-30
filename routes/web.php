@@ -53,7 +53,10 @@ Route::post('/Citas/guardar', [App\Http\Controllers\CitasController::class, 'sav
 Route::get('/Citas/editar/{id}', [App\Http\Controllers\CitasController::class, 'edit']);
 Route::post('/Citas/actualizar', [App\Http\Controllers\CitasController::class, 'update']);
 
+Route::get('/Citas/informe', [App\Http\Controllers\CitasController::class, 'informe']);
+Route::post('/Citas/download', [App\Http\Controllers\CitasController::class, 'download']);
+
 
 Route::get('/Inmuebles/Servicios', [App\Http\Controllers\InmueblesServiciosController::class, 'index']);
-Route::get('/Inmuebles/guardar2', [App\Http\Controllers\InmueblesServiciosController::class, 'save']);
+Route::post('/Inmuebles/guardar2', [App\Http\Controllers\InmueblesServiciosController::class, 'save']);
 Route::get('/Inmuebles/listar2', [App\Http\Controllers\InmueblesServiciosController::class, 'show']);
