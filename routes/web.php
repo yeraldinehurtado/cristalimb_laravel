@@ -29,6 +29,7 @@ Route::post('/Propietarios/guardar', [App\Http\Controllers\PropietariosControlle
 Route::get('/Propietarios/editar/{id}', [App\Http\Controllers\PropietariosController::class, 'edit']);
 Route::post('/Propietarios/actualizar', [App\Http\Controllers\PropietariosController::class, 'update']);
 Route::get('/Propietarios/cambiar/estado/{id}/{estado}', [App\Http\Controllers\PropietariosController::class, 'updateState']);
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
