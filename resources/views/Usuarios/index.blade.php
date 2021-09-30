@@ -3,6 +3,7 @@
 <div class="card">
     <div class="card-header">
         <strong>Usuarios</strong>
+        <a href="/Propietarios/crear" class="btn btn-link">Crear</a>
     </div>
     <div class="card-body">
         @include('flash::message')
