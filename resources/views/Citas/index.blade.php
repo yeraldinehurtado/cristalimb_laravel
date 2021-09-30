@@ -16,7 +16,7 @@
                     <th>Teléfono</th>
                     <th>Email</th>
                     <th>Tipo de Servicio</th>
-                    <th>Fecha y hora de la cita</th>
+                    <th>Fecha cita</th>
                     <th>Editar</th>                   
                 </tr>
             </thead>
@@ -30,7 +30,7 @@
     $('#Citas').DataTable({
         processing: true,
         serverSide: true,
-        ajax: '/Propietarios/listar',
+        ajax: '/Citas/listar',
         columns: [
             {data: 'identificacion', name: 'identificacion'},
             {data: 'nombres', name: 'nombres'},
@@ -38,7 +38,7 @@
             {data: 'telefono', name: 'telefono'},
             {data: 'email', name: 'email'},
             {data: 'tipoServicio', name: 'tipoServicio'},
-            {data: 'fechahoraCita', name: 'fechahoraCita'},
+            {data: 'fechaCita', name: 'fechaCita'},
             {data: 'editar', name: 'editar', orderable: false, searchable: false},          
         ]
     });

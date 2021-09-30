@@ -51,7 +51,7 @@ class CitasController extends Controller
                 "telefono"=>$input["telefono"],
                 "email"=>$input["email"],
                 "tipoServicio"=>$input["tipoServicio"],
-                "fechahoraCita"=>$input["fechahoraCita"],
+                "fechaCita"=>$input["fechaCita"],
             ]);
             //mensaje al registrar el cita
             Flash::success("Se registró la cita");
@@ -106,7 +106,7 @@ class CitasController extends Controller
                 "telefono"=>$input["telefono"],
                 "email"=>$input["email"],
                 "tipoServicio"=>$input["tipoServicio"],
-                "fechahoraCita"=>$input["fechahoraCita"],
+                "fechaCita"=>$input["fechaCita"],
             ]);
             //mensaje al modificar la cita
             Flash::success("Se modificó la cita");

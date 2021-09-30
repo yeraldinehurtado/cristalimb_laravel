@@ -20,7 +20,8 @@ class Citas extends Model
         "telefono",
         "email",
         "tipoServicio",
-        "fechahoraCita",
+        "fechaCita",
+        "horaCita",
     ];
     //establecer reglas de validación
     public static $rules=[
@@ -30,6 +31,6 @@ class Citas extends Model
         "telefono" => 'required|min:0',
         "email" => 'required|string|min:5',
         "tipoServicio" => 'required|string|min:2',
-        "fechahoraCita" => 'required|datetime|min:2',
+        "fechaCita" => 'required|date|min:2',
     ];
 }

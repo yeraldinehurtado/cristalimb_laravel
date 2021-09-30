@@ -73,10 +73,10 @@
             </div>
             <div class="col-4">
                 <div class="form-group">
-                    <label for="fechahoraCita">Fecha y hora de la cita</label>
-                    <input value="{{ $citas->fechahoraCita }}" type="datetime" 
-                    class="form-control @error('fechahoraCita') is-invalid @enderror" name="fechahoraCita">
-                    @error('fechahoraCita')
+                    <label for="fechaCita">Fecha cita</label>
+                    <input value="{{ $citas->fechaCita }}" type="date" 
+                    class="form-control @error('fechaCita') is-invalid @enderror" name="fechaCita">
+                    @error('fechaCita')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
