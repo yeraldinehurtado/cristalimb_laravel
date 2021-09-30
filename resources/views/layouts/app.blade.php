@@ -54,6 +54,10 @@
         </svg>
       </div>
       <ul class="c-sidebar-nav">
+      <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Usuarios">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
+            </svg> Usuarios</a></li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Propietarios">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
@@ -69,7 +73,11 @@
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Inmuebles/Servicios">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Servicios inmueble</a></li>    
+            </svg> Servicios inmueble</a></li>  
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Reportes">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
+            </svg> Reportes</a></li>  
       </ul>
       <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
