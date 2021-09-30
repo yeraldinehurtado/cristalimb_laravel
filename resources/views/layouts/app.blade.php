@@ -54,38 +54,22 @@
         </svg>
       </div>
       <ul class="c-sidebar-nav">
-      <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Usuarios">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Usuarios</a></li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Roles">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Configuración</a></li>
+            <i class="fas fa-user fa-fw"> </i>  Roles</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Usuarios">
+          <i class="fas fa-users fa-fw">  </i>  Usuarios</a></li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Propietarios">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Propietarios</a></li>
+          <i class="fas fa-user-tie fa-fw"></i> Propietarios</a></li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Inmuebles">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Inmuebles</a></li>
+          <i class="fas fa-home fa-fw"></i>  Inmuebles</a></li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Empleados">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Empleados</a></li>   
+          <i class="fas fa-user fa-fw"></i> Empleados</a></li>   
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Citas">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Citas</a></li>    
+          <i class="fas fa-calendar-week fa-fw"></i> Citas</a></li>    
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Inmuebles/Servicios">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Servicios inmueble</a></li>  
+          <i class="fas fa-house-user fa-fw"></i> Servicios inmueble</a></li>  
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Reportes">
-            <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Reportes</a></li>  
+          <i class="fas fa-chart-bar fa-fw"></i> Reportes</a></li>  
       </ul>
       <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>

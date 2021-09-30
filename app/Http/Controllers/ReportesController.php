@@ -16,12 +16,12 @@ class ReportesController extends Controller
         return view('Reportess.index');
     }
 
-    public function lista1(){
-        return view('Reportess.lista1');
+    public function listar1(){
+        return view('Reportess.listar1');
     }
 
-    public function lista2(){
-        return view('Reportess.lista2');
+    public function listar2(){
+        return view('Reportess.listar2');
     }
 
     
