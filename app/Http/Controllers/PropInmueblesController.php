@@ -78,13 +78,12 @@ class PropInmueblesController extends Controller
 
             $inmuebles = Inmuebles::select("inmuebles.*")
             ->join("propietarios_inmuebles", "inmuebles.id","=", "propietarios_inmuebles.inmueble_id")
-            ->where("propietarios_inmuebles.inmueble_id", $id)
             ->get();
 
             $propietarios = Propietarios::select("propietarios.*")
             ->join("propietarios_inmuebles", "propietarios.id","=", "propietarios_inmuebles.propietario_id")
-            ->where("propietarios_inmuebles.propietario_id", $id)
             ->get();
+
         
 
         return view("PropInmuebles.show", compact("inmuebles", "propietarios"));
