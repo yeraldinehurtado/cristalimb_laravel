@@ -54,6 +54,10 @@
         </svg>
       </div>
       <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Roles">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
+            </svg> Configuración</a></li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Propietarios">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>

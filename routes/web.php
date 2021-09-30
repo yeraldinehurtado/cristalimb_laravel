@@ -21,6 +21,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/Roles', [App\Http\Controllers\RolesController::class, 'index']);
+
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/quienessomos', [App\Http\Controllers\LandingController::class, 'quienessomos']);
 Route::get('/servicios', [App\Http\Controllers\LandingController::class, 'servicios']);
