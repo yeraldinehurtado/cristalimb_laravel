@@ -75,6 +75,6 @@ Route::post('/Inmuebles/guardar2', [App\Http\Controllers\InmueblesServiciosContr
 Route::get('/Inmuebles/listar2', [App\Http\Controllers\InmueblesServiciosController::class, 'show']);
 
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
-Route::get('/Reportes', [App\Http\Controllers\UsuariosController::class, 'index']);
-Route::get('/Reportes/listar1', [App\Http\Controllers\CitasController::class, 'listar1']);
-Route::get('/Reportes/listar2', [App\Http\Controllers\CitasController::class, 'listar2']);
+Route::get('/Reportes', [App\Http\Controllers\ReportesController::class, 'index']);
+Route::get('/Reportes/listar1', [App\Http\Controllers\ReportesController::class, 'listar1']);
+Route::get('/Reportes/listar2', [App\Http\Controllers\ReportesController::class, 'listar2']);
