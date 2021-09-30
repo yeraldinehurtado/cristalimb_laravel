@@ -51,6 +51,6 @@ Route::get('/Citas/editar/{id}', [App\Http\Controllers\CitasController::class, '
 Route::post('/Citas/actualizar', [App\Http\Controllers\CitasController::class, 'update']);
 
 
-Route::get('/PropInmuebles', [App\Http\Controllers\PropInmueblesController::class, 'index']);
-Route::post('/PropInmuebles/guardar', [App\Http\Controllers\PropInmueblesController::class, 'save']);
-Route::get('/PropInmuebles/listar2', [App\Http\Controllers\PropInmueblesController::class, 'show']);
+Route::get('/Inmuebles/Servicios', [App\Http\Controllers\InmueblesServiciosController::class, 'index']);
+Route::get('/Inmuebles/guardar2', [App\Http\Controllers\InmueblesServiciosController::class, 'save']);
+Route::get('/Inmuebles/listar2', [App\Http\Controllers\InmueblesServiciosController::class, 'show']);

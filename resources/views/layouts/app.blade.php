@@ -66,10 +66,10 @@
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
             </svg> Citas</a></li>    
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/PropInmuebles">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Inmuebles/Servicios">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{ asset('assets/dashboard/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
-            </svg> Propietario Inmuebles</a></li>    
+            </svg> Servicios inmueble</a></li>    
       </ul>
       <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
