@@ -3,7 +3,7 @@
 <div class="card">
     <div class="card-header">
         <strong>Citas</strong>
-        <a href="/Citas/crear" class="btn btn-link">Crear</a>
+        <a href="/Citas/crear" class="btn btn-link">Crear</a> <a href="/Citas/informe" class="btn btn-link">Informe</a>
     </div>
     <div class="card-body">
         @include('flash::message')

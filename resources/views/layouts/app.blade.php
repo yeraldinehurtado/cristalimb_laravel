@@ -53,25 +53,43 @@
           <use xlink:href="{{ asset('assets/dashboard/assets/img/coreui.svg#signet')}}"></use>
         </svg>
       </div>
-      <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Roles">
-            <i class="fas fa-user fa-fw"> </i>  Roles</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Usuarios">
-          <i class="fas fa-users fa-fw">  </i>  Usuarios</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Propietarios">
-          <i class="fas fa-user-tie fa-fw"></i> Propietarios</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Inmuebles">
-          <i class="fas fa-home fa-fw"></i>  Inmuebles</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Empleados">
-          <i class="fas fa-user fa-fw"></i> Empleados</a></li>   
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Citas">
-          <i class="fas fa-calendar-week fa-fw"></i> Citas</a></li>    
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Inmuebles/Servicios">
-          <i class="fas fa-house-user fa-fw"></i> Servicios inmueble</a></li>  
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/Reportes">
-          <i class="fas fa-chart-bar fa-fw"></i> Reportes</a></li>  
+      <div class="contenedor-menu">
+      <ul class="menu" class="c-sidebar-nav">
+        <li><a href="#"><i class="icono izquierda fas fa-cog fa-fw"></i>Configuración<i class="icono derecha fa fa-chevron-down"></i></a>
+				  <ul>
+					  <li><a href="/Roles">Gestión de roles</a></li>
+				  </ul>
+			  </li>
+        <li><a href="#"><i class="icono izquierda fas fa-user fa-fw"></i>Usuarios<i class="icono derecha fa fa-chevron-down"></i></a>
+				  <ul>
+					  <li><a href="/Usuarios">Gestión de usuarios</a></li>
+				  </ul>
+			  </li>
+        <li><a href="#"><i class="icono izquierda fas fa-house-user fa-fw"></i>Propiedades<i class="icono derecha fa fa-chevron-down"></i></a>
+				  <ul>
+					  <li><a href="/Propietarios">Gestión de propietarios</a></li>
+            <li><a href="/Inmuebles">Gestión de inmuebles</a></li>
+				  </ul>
+			  </li>
+        <li><a href="#"><i class="icono izquierda fas fa-users fa-fw"></i>Empleados<i class="icono derecha fa fa-chevron-down"></i></a>
+				  <ul>
+					  <li><a href="/Empleados">Gestión de empleados</a></li>
+				  </ul>
+			  </li>
+        <li><a href="#"><i class="icono izquierda fas fa-calendar-week fa-fw"></i>Citas<i class="icono derecha fa fa-chevron-down"></i></a>
+				  <ul>
+					  <li><a href="/Citas">Gestión de citas</a></li>
+				  </ul>
+			  </li>
+        <li><a href="#"><i class="icono izquierda fas fa-chart-bar fa-fw"></i>Reportes<i class="icono derecha fa fa-chevron-down"></i></a>
+				  <ul>
+					  <li><a href="/Reportes">Gestión de reportes</a></li>
+				  </ul>
+			  </li>
+        
       </ul>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+      </div>
+      
     </div>
     <div class="c-wrapper c-fixed-components">
       <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
@@ -139,6 +157,7 @@
     <!--<![endif]-->
     <script type="text/javascript" src="{{ asset('assets/dashboard/js/datatables.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/dashboard/js/datatables.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/dashboard/js/menu.js') }}"></script>
     
     @yield('scripts')
   </body>
